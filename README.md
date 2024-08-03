@@ -1,5 +1,9 @@
-website ulang tahun dengan javaScript dan penanggalan otomatis
+<h1>website ultah</h1>
 
+<h4>
+  website ulang tahun dengan javaScript dan penanggalan otomatis dengan desain simpel
+  <br>
+  <a href="https://mipomi.github.io/ulang-tahun/">klik untuk melihat</a>
+</h4>
 
-
-dibuat oleh: 12s atau mipomi(@tnyouu)
+<p>dibuat oleh: 12s atau mipomi(ig:@tnyouu)</p>
