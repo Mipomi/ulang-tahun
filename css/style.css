@@ -1,0 +1,223 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    text-transform: capitalize;
+    height: 100vh;
+    overflow: hidden;
+    border-color: rgb(186, 237, 246);
+    background-image: url(../img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.waktu{
+    margin: 3px;
+    padding: 0;
+    text-align: center;
+    color: #d39832;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+#awl{
+    margin-top: 110px;
+    text-align: center;
+    color: #e0dfdf;
+}
+.btn{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #3c69fd;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #cfebf3;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 50px;
+    min-width: 0;
+    outline: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 30%;
+    will-change: transform;
+}
+.btn:disabled{
+    pointer-events: none;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #3c69fd;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+.btn:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+#wait{
+    margin-top: 110px;
+    text-align: center;
+    color: #ffffff;
+}
+#sisa{
+    color: #8397f0;
+}
+.container{
+    position: relative;
+    box-sizing: border-box;
+    width: 350px;
+    transform: translateX(0%);
+    transition: transform 2s linear;
+}
+.container:has(.turned){
+    transform: translateX(50%);
+}
+.container:has(.turned):not(.container:has(.unturned)){
+    transform: translateX(100%);
+}
+.page{
+    font-family: 'Courier New', Courier, monospace;
+    width: 290px;
+    height: 430px;
+    position: absolute;
+    padding: 30px;
+    cursor: pointer;
+    perspective: 2000px;
+    margin-top: 10px;
+
+}
+.cover{
+    margin-top: 0;
+    width: 300px;
+    height: 450px;
+}
+.backCover{
+    position: relative;
+}
+.front,
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    background-color: #faf9e6;
+    border-radius: 0px 10px 10px 0px;
+    transform-origin: center left;
+    transition: transform 2s linear;
+}
+.front{
+    backface-visibility: hidden;
+    z-index: 1;
+}
+.back{
+    z-index: 0;
+}
+.image{
+    width: 100%;
+}
+/* .description::first-letter{
+    font-size: 2rem;
+    color: #028daf;
+} 
+ .title{
+    margin: 0;
+    text-align: center;
+ }*/
+.cover .front,
+.cover .back{
+    background-color: #3f7ed5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    letter-spacing: 4px;
+}
+.logo{
+    width: 50%;
+    height: 32%;
+    border-radius: 50%;
+    /* border: 2px solid #015e75; */
+}
+.turned .front,
+.turned .back{
+    transform: rotateY(-180deg);
+}
+.backContent{
+    transform: rotateY(-180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.cover{
+    z-index: 10;
+}
+#page1{
+    z-index: 9;
+}
+#page2{
+    z-index: 8;
+}
+#page3{
+    z-index: 7;
+}
+#page4{
+    z-index: 6;
+}
+.backCover{
+    z-index: 5;
+}
+@media (max-width: 768px){
+    body{
+        background-image: url(../img/bunga\ biru.jpeg);
+        background-position: center;
+        background-size: cover;
+    }
+    .waktu{
+        color: #6eb996;
+    }
+    #awl,
+    #wait{
+        color: #1449f7;
+    }
+    #sisa{
+        color: #ffffff;
+    }
+    .btn{
+        width: 40%;
+    }
+    .container{
+        margin-top: 110px;
+        width: 100%;
+    }
+    .page{
+        margin-top: 10px;
+        width: 120px;
+        height: 200px;
+        padding: 28px;
+        font-size: 10px;
+    }
+    .cover{
+        width: 130px;
+        height: 220px;
+        margin-top: 0px;
+    }
+    .front,
+    .back{
+        padding: 25px;
+    }
+}

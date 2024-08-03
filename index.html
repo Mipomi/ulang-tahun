@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulutah</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="waktu">
+        <p class="tanggal" id="tanggal"></p>
+        <p class="jam" id="jam" onload="setWaktu()"></p>
+    </div>
+    <div id="awl">
+        <h1>Ciee yang mau ulang tahun, coba klik tombol di bawah</h1>
+        <button id="lihat" onclick="checkbirtday()" class="btn" role="button">Lihat</button>
+    </div>
+    
+    <!-- bagian pemberitahuan -->
+    <div id="wait" style="display: none;">
+        <h1>yahh, sabar ya ternyata masih <span id="sisa"></span> buat hadiahnya, coba buka lagi nanti </h1>
+        <button id="kemali" onclick="back()" class="btn" role="button">Kembali</button>
+    </div>
+    
+    <!-- bagian surat atau hadiah -->
+    <!-- isi pada bagian deskripsi pesan apa yang ingin di tulis atau di sampaikan -->
+    <div id="hadiah" style="display: none;">
+        <div class="container">
+            <div class="cover page unturned">
+                <div class="front">
+                    <h2 class="mainTitle">our story</h2>
+                    <img src="img/flower.png" alt="Cover" class="logo">
+                    <span class="authorData">12s to tnyouu</span>
+                </div>
+                <div class="back"></div>
+            </div>
+
+            <div class=" page unturned" id="page1">
+                <div class="front">
+                    <div class="frontContent">
+                        <h2 class="title"></h2>
+                        <p class="description">
+                            halo kamu yang baca ini hehe, udah ulang tahun yang ke <span id="umr"></span>
+                            aja ya kamu. semoga dengan umur mu yang sekarang kamu makin di permdah
+                            dalam segala urusan kamu. jangan overthinking terus ya kamu jangan terlalu di pikirkan 
+                            masalah nya ya, pasti ada jalan keluarnya kok itu.
+                        </p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="backContent">
+                        <!-- <img src="" alt="" class="image"> -->
+                        <p class="description">
+                            jujur selama dengan kamu, aku jadi beda banget dengan aku yang dulu sebelum dengan kamu.
+                            makasih ya udah bantu aku jadi lebih baik lagi, ku ga tau harus gimana juga, ku harap kita akan selalu bersama terus.
+                            jangan pernah tinggalin aku ya, aku tau aku banyak bawa masalah sama kamu.maaf kalo aku suka ulangi kesalahan ku.
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" page unturned" id="page2">
+                <div class="front">
+                    <div class="frontContent">
+                        <h2 class="title"></h2>
+                        <p class="description">
+                            jangan tinggalkan aku lagi yaa, tetap sama aku, ajarin aku dan kasih tau aku kalo aku ada buat salah,
+                            kalo ada masalah kita bicarakan bersama ya? cari solusinya bareng bareng, jangan langsung di tinggal begitu saja.
+                            pasti berat dan capek sih ngadepin aku yang gini, maafkan aku yaa sering buat capek kamu.
+                        </p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="backContent">
+                        <!-- <img src="" alt="" class="image"> -->
+                         <p class="description">
+                            tetap bersama ku terus lagi ya? jangan pergi, aku bener bener 
+                            sayang sama kamu
+                         </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" page unturned" id="page3">
+                <div class="front">
+                    <div class="frontContent">
+                        <h2 class="title"></h2>
+                        <p class="description">
+                            jadi inget dulu, kita ketemu lewat aplikasi sampai sekarang kita tetap bersama meskipun kamu sering capek dan bosen
+                            dengan ku, kamu masuh tetap bersama ku. ku tau ini terlihat omong kosong, tapi ku mau kita bisa menjadi sepasang suami istri.
+                            yahh meski itu akan butuh waktu yang lama, semoga kita tetap bersama yaa.
+                        </p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="backContent">
+                        <!-- <img src="" alt="" class="image"> -->
+                         <p class="description">
+                            aku tau kamu dan kmu tau aku, meski kamu bagiaman pun aku suka sama kamu, kamu cantik,
+                            baik, lucu, paham yang tidak aku paham, dan cerewet tapi sebenernya cerewt nya kamu itu bentuk sayang kamu kepada aku.
+                            aku tau itu. terima kasih ku ucapkan sudah mau baca omongan ku yang ga tau apa ini.
+                            ku mohon jangan tinggal kan aku yaa? 
+                         </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class=" page unturned" id="page4">
+                <div class="front">
+                    <div class="frontContent">
+                        <h2 class="title"></h2>
+                        <p class="description">
+                            aku tau aku banyak salahnya, aku juga tau kamu capek,
+                            tapi ku akan coba jadi lebih baik lagi. ku ingin kita tetap bersama, kalo ada masalah kmu bisa bilang ke aku,
+                            kita selesaikan semuanya bersama sama, jangan pergi meninggalkan.
+                            maaf, aku benar benar minta maaf atas semua perlakuanku selama dengan mu, maafkan kau yaa.
+                        </p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="backContent">
+                        <!-- <img src="" alt="" class="image"> -->
+                         <h3>terima kasih udah masih mau dengan ku
+                         aku sayang kamu, jangan tinggalkan aku ya sayangku🥰😘♥
+                         selamat ulang tahun🎉</h3>
+                         
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cover page unturned backCover">
+                <div class="front">
+                </div>
+                <div class="back">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
